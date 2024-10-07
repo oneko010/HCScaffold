@@ -1,0 +1,6 @@
+framework module HCScaffold {
+  umbrella header "HCScaffold-umbrella.h"
+
+  export *
+  module * { export * }
+}

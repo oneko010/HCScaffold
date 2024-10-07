@@ -1,0 +1,22 @@
+{
+  "name": "HCScaffold",
+  "version": "0.1.0",
+  "summary": "A short description of HCScaffold.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/崔海成/HCScaffold",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "崔海成": "cuihaicheng@aggrx.com"
+  },
+  "source": {
+    "git": "https://github.com/崔海成/HCScaffold.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "HCScaffold/Classes/**/*"
+}

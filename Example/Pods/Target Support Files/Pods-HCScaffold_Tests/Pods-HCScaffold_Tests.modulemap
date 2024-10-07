@@ -1,0 +1,6 @@
+framework module Pods_HCScaffold_Tests {
+  umbrella header "Pods-HCScaffold_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
