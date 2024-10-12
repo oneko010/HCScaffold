@@ -20,6 +20,8 @@
 		37F83654ADC395569E9110B95765F2CA /* Pods-HCScaffold_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2870D3ED0B1D76ED5A9A0666CFEBD1D4 /* Pods-HCScaffold_Example-dummy.m */; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5A8A3DF82CB475E3006B58D6 /* HCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8A3DF72CB475E3006B58D6 /* HCLogger.swift */; };
+		5AA5D4282CBA22D200358D89 /* String+FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5D4272CBA22D200358D89 /* String+FilePath.swift */; };
+		5AA5D42A2CBA235000358D89 /* UIApplication+FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5D4292CBA235000358D89 /* UIApplication+FilePath.swift */; };
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -94,6 +96,8 @@
 		4D15FAD0E1BAF4DE567ACFFAB487B946 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A8A3DF72CB475E3006B58D6 /* HCLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HCLogger.swift; path = ../HCScaffold/Classes/HCLogger.swift; sourceTree = "<group>"; };
+		5AA5D4272CBA22D200358D89 /* String+FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+FilePath.swift"; path = "../HCScaffold/Classes/Foundation/String+FilePath.swift"; sourceTree = "<group>"; };
+		5AA5D4292CBA235000358D89 /* UIApplication+FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIApplication+FilePath.swift"; path = "../HCScaffold/Classes/UIKit/UIApplication+FilePath.swift"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD6B1AD43722141881F79567E478381 /* Pods-HCScaffold_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HCScaffold_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6017C029EF50894A872E72509A0DD32E /* HCScaffold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HCScaffold.release.xcconfig; sourceTree = "<group>"; };
@@ -212,9 +216,27 @@
 			path = log;
 			sourceTree = "<group>";
 		};
+		5AA5D4252CBA228600358D89 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5D4292CBA235000358D89 /* UIApplication+FilePath.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5AA5D4262CBA228F00358D89 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5AA5D4272CBA22D200358D89 /* String+FilePath.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		5EAB5AA72A3B6844D02727085B85F14F /* HCScaffold */ = {
 			isa = PBXGroup;
 			children = (
+				5AA5D4262CBA228F00358D89 /* Foundation */,
+				5AA5D4252CBA228600358D89 /* UIKit */,
 				5A8A3DF62CB475A9006B58D6 /* log */,
 				CEAAB85B59FD9756041E069C50FC5C20 /* Pod */,
 				D7AAE0F1B83BBCC5EC4C09D52BB5D5CC /* Support Files */,
@@ -565,7 +587,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A8A3DF82CB475E3006B58D6 /* HCLogger.swift in Sources */,
+				5AA5D42A2CBA235000358D89 /* UIApplication+FilePath.swift in Sources */,
 				1750D396590B3CCD7629488AD5E71A15 /* HCScaffold-dummy.m in Sources */,
+				5AA5D4282CBA22D200358D89 /* String+FilePath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
