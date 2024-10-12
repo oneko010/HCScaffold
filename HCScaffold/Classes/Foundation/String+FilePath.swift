@@ -12,7 +12,7 @@ enum FilePathError: Error {
 }
 
 extension String {
-    func fileNameNoExtension() throws -> String {
+    public func fileNameNoExtension() throws -> String {
         let url = URL(string: self)
         if url == nil {
             throw FilePathError.invalidOperate(msg: "\(self) can't build url")

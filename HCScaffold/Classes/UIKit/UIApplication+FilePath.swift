@@ -8,7 +8,7 @@
 import Foundation
 
 extension UIApplication {
-    static var documentPath: String {
+    public static var documentPath: String {
         get {
             return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         }
